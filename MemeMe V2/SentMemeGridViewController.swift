@@ -38,6 +38,7 @@ class SentMemeGridViewController: UICollectionViewController {
         
         // Set the image
         cell.image?.image = meme.memedImage
+        cell.image?.contentMode = .scaleAspectFit
         // Set text
         cell.text?.text =  "\(meme.topText) - \(meme.bottomText)"
         return cell

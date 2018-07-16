@@ -86,21 +86,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rlH-JA-g0R">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="100" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MemeMeCell" id="sm1-Va-90A" userLabel="MemeMeCell" customClass="MemeGridCell" customModule="MemeMe_V2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="10" y="10" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JWf-2e-aC7">
-                                            <rect key="frame" x="-95" y="-39" width="240" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2i-Wr-6Hk">
                                             <rect key="frame" x="4" y="29" width="42" height="21"/>
@@ -112,10 +112,10 @@
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="JWf-2e-aC7" firstAttribute="leading" secondItem="sm1-Va-90A" secondAttribute="leading" constant="-95" id="AAE-zv-io2" userLabel="Image View.leading = leading"/>
-                                    <constraint firstItem="JWf-2e-aC7" firstAttribute="top" secondItem="sm1-Va-90A" secondAttribute="top" constant="-39" id="ALw-hc-CiU" userLabel="Image View.top = top"/>
-                                    <constraint firstAttribute="bottom" secondItem="JWf-2e-aC7" secondAttribute="bottom" constant="-39" id="ENW-gX-BC8" userLabel="bottom = Image View.bottom"/>
-                                    <constraint firstAttribute="trailing" secondItem="JWf-2e-aC7" secondAttribute="trailing" constant="-95" id="bPM-cN-PeE" userLabel="trailing = Image View.trailing"/>
+                                    <constraint firstAttribute="bottom" secondItem="JWf-2e-aC7" secondAttribute="bottom" id="3Qc-XP-Db4"/>
+                                    <constraint firstAttribute="trailing" secondItem="JWf-2e-aC7" secondAttribute="trailing" id="8yh-Tw-pEx"/>
+                                    <constraint firstItem="JWf-2e-aC7" firstAttribute="leading" secondItem="sm1-Va-90A" secondAttribute="leading" id="AAE-zv-io2" userLabel="Image View.leading = leading"/>
+                                    <constraint firstItem="JWf-2e-aC7" firstAttribute="top" secondItem="sm1-Va-90A" secondAttribute="top" id="ALw-hc-CiU" userLabel="Image View.top = top"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="image" destination="JWf-2e-aC7" id="DEH-6r-FCG"/>
@@ -177,10 +177,10 @@
             </objects>
             <point key="canvasLocation" x="-1634" y="-2695"/>
         </scene>
-        <!--Meme Me View Controller-->
+        <!--Create Meme Me View Controller-->
         <scene sceneID="EdG-44-g4o">
             <objects>
-                <viewController id="le7-hM-Xpv" customClass="MemeMeViewController" customModule="MemeMe_V2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="le7-hM-Xpv" customClass="CreateMemeMeViewController" customModule="MemeMe_V2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aTe-Wg-4ng">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

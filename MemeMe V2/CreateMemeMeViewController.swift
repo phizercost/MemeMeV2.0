@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CreateMemeMeViewController.swift
 //  MemeMe V2
 //
 //  Created by Phizer Cost on 6/7/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MemeMeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
+class CreateMemeMeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     // MARK: Outlets
     
@@ -103,7 +103,8 @@ class MemeMeViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     @objc func keyboardWillHide(_ notification: Notification) {
         if bottomTextField.isFirstResponder {
-            view.frame.origin.y += getKeyboardHeight(notification)
+            //view.frame.origin.y += getKeyboardHeight(notification)
+            view.frame.origin.y = 0
         }
     }
     
