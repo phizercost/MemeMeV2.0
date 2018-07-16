@@ -103,7 +103,6 @@ class CreateMemeMeViewController: UIViewController, UIImagePickerControllerDeleg
     
     @objc func keyboardWillHide(_ notification: Notification) {
         if bottomTextField.isFirstResponder {
-            //view.frame.origin.y += getKeyboardHeight(notification)
             view.frame.origin.y = 0
         }
     }
